@@ -1,6 +1,5 @@
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!         960        */
 @media (max-width: 960px) {
-
   .slider__inner::before,
   .slider__inner::after {
     display: none;
@@ -47,14 +46,11 @@
   .footer__item-three {
     width: 50%;
   }
-
 }
-
 
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!         850        */
 
 @media (max-width: 850px) {
-
   .info__title {
     padding-left: 55px;
   }
@@ -63,13 +59,10 @@
   .footer__item-three {
     padding: 0 10px;
   }
-
 }
-
 
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!         800        */
 @media (max-width: 800px) {
-
   .info__inner {
     flex-wrap: wrap;
     padding-bottom: 0;
@@ -93,13 +86,10 @@
     margin: 0 100px 100px;
     text-align: center;
   }
-
 }
-
 
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!         750        */
 @media (max-width: 750px) {
-
   .footer__inner {
     padding-bottom: 0;
   }
@@ -115,14 +105,11 @@
   .footer__social {
     justify-content: space-between;
   }
-
 }
-
 
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!         600        */
 @media (max-width: 600px) {
-
-  .header__menu a+a {
+  .header__menu a + a {
     margin-left: 10px;
   }
 
@@ -141,9 +128,7 @@
   .footer__item-title {
     margin-bottom: 15px;
   }
-
 }
-
 
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!         500        */
 @media (max-width: 500px) {
@@ -153,12 +138,11 @@
 
   .header__menu {
     position: absolute;
-    top: 78px;
+    top: 70px;
     left: 0;
     right: 0;
     width: 100%;
     z-index: 1;
-    display: block;
     text-align: center;
     z-index: 50;
   }
@@ -169,7 +153,7 @@
     text-align: center;
     margin: 0;
     color: #000;
-    background-color: rgba(232, 102, 60, .8);
+    background-color: rgba(232, 102, 60, 0.8);
     margin-left: 0;
     padding-bottom: 5px;
   }
@@ -182,15 +166,28 @@
     display: none;
   }
 
-  .header__menu a+a {
+  .header__menu a + a {
     margin-left: 0;
   }
 
   .header__menu-btn {
     display: block;
-    position: absolute;
-    top: -48px;
+    position: fixed;
+    top: 32px;
     right: 25px;
+  }
+  .header__menu-btn.active div:nth-child(2) {
+    display: none;
+  }
+  .header__menu-btn.active div:first-child {
+    transform: rotate(-45deg);
+    position: absolute;
+    top: 10px;
+  }
+  .header__menu-btn.active div:last-child {
+    transform: rotate(45deg);
+    position: absolute;
+    top: 10px;
   }
 
   .slider__info {
@@ -215,13 +212,10 @@
   .footer__social {
     justify-content: center;
   }
-
 }
-
 
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!         400        */
 @media (max-width: 400px) {
-
   .slider__info {
     max-width: 290px;
   }
@@ -241,5 +235,4 @@
   .footer__item {
     padding: 0 5px;
   }
-
 }
